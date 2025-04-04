@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav Gunti - Resume</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* A4 size container */
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: white;
+            padding: 30mm 25mm;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Header styling with modern look */
+        .header {
+            margin-bottom: 25px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 15px;
+            position: relative;
+        }
+        
+        .name {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            letter-spacing: 0.5px;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #3498db;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+        
+        .contact-info {
+            margin-bottom: 10px;
+            line-height: 1.7;
+            color: #444;
+        }
+        
+        /* Section styling with cleaner borders */
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Experience and education entries with improved spacing */
+        .entry {
+            margin-bottom: 18px;
+        }
+        
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            align-items: center;
+        }
+        
+        .entry-title {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .entry-date {
+            color: #3498db;
+            font-weight: 500;
+        }
+        
+        .entry-company {
+            color: #444;
+            font-weight: 500;
+        }
+        
+        .entry-location {
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .entry-description {
+            margin-top: 5px;
+        }
+        
+        .entry-bullet {
+            margin-left: 20px;
+            margin-bottom: 3px;
+            position: relative;
+        }
+        
+        .entry-bullet:before {
+            content: "•";
+            position: absolute;
+            left: -15px;
+            color: #3498db;
+        }
+        
+        /* Skills section with better visual separation */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background-color: #f0f7fc;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #2c3e50;
+            border: 1px solid #d5e5f2;
+        }
+        
+        /* Responsive design improvements */
+        @media screen and (max-width: 210mm) {
+            .resume {
+                width: 100%;
+                min-height: unset;
+                padding: 20mm 15mm;
+            }
+            
+            .entry-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .entry-date {
+                margin-top: 3px;
+            }
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            
+            .resume {
+                width: 100%;
+                box-shadow: none;
+                padding: 0;
+            }
+            
+            .skill {
+                border: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <!-- Header -->
+        <div class="header">
+            <div class="name">PRANAV GUNTI</div>
+            <div class="title">Information Technology Student</div>
+            <div class="contact-info">
+                guntipranav05@gmail.com &nbsp;|+91 9441318792 &nbsp;&nbsp;|
+                <a href="https://github.com/PranavGunti" target="_blank" style="color: #3498db; text-decoration: none;">GitHub</a>
+                |&nbsp; Hyderabad, Telangana &nbsp;|
+            </div>
+        </div>
+        
+        <!-- Summary Section -->
+        <div class="section">
+            <div class="section-title">Objective</div>
+            <p>Currently pursuing B.Tech 3rd year in Information Technology with strong foundation in software development technologies.</p>
+        </div>
+        
+        <!-- Education Section -->
+        <div class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">Bachelor of Engineering in Information Technology</div>
+                    <div class="entry-date">2023 - 2026</div>
+                </div>
+                <div class="entry-company">Vasavi College of Engineering</div>
+                <div class="entry-location">Hyderabad, Telangana</div>
+                <div class="entry-description">
+                    <div class="entry-bullet">Current CGPA: 7.36</div>
+                    <div class="entry-bullet">Relevant coursework: Java, Data Structures, Software Engineering, Database Systems</div>
+                </div>
+            </div>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">Diploma in Computer Science</div>
+                    <div class="entry-date">2020 - 2023</div>
+                </div>
+                <div class="entry-company">Government Institute of Electronics</div>
+                <div class="entry-location">Secunderabad, Telangana</div>
+                <div class="entry-description">
+                    <div class="entry-bullet">CGPA: 9.01</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Technical Skills Section -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-list">
+                <div class="skill">Java</div>
+                <div class="skill">Spring Framework 6</div>
+                <div class="skill">Spring Boot 3</div>
+                <div class="skill">Maven</div>
+                <div class="skill">Docker</div>
+                <div class="skill">Microservices</div>
+                <div class="skill">Hibernate</div>
+                <div class="skill">Frontend Web Technologies</div>
+                <div class ="skill">Git</div>
+                <div class ="skill">Git Hub</div>
+            </div>
+        </div>
+        
+        <!-- Academic Projects Section -->
+        <div class="section">
+            <div class="section-title">Academic Projects</div>
+            
+            <div class="entry">
+                <div class="entry-title">Spring Boot Web Application</div>
+                <div class="entry-description">
+                    <div class="entry-bullet">Developed a full-stack web application using Spring Boot with RESTful API architecture</div>
+                    <div class="entry-bullet">Implemented secure user authentication and authorization with Spring Security</div>
+                    <div class="entry-bullet">Utilized Hibernate ORM for database interactions and deployed using Docker containers</div>
+                </div>
+            </div>
+            
+            <div class="entry">
+                <div class="entry-title">Database Management System</div>
+                <div class="entry-description">
+                    <div class="entry-bullet">Designed and implemented a relational database system with SQL</div>
+                    <div class="entry-bullet">Created stored procedures and triggers to automate data processing tasks</div>
+                    <div class="entry-bullet">Built a Java-based interface for database operations using JDBC</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certifications Section -->
+        <div class="section">
+            <div class="section-title">Certifications & Training</div>
+            
+            <div class="entry">
+                <div class="entry-title">NPTEL: The Joy of Computing Using Python</div>
+                <div class="entry-description">
+                    <div class="entry-bullet">Completed with 79% score</div>
+                </div>
+            </div>
+            
+            <div class="entry">
+                <div class="entry-title">Industrial Training</div>
+                <div class="entry-description">
+                    <div class="entry-bullet">Completed industrial training for diploma at National Small Industries Corporation (NSIC)</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Information Section -->
+        <div class="section">
+            <div class="section-title">Additional Information</div>
+            <div class="entry-description">
+                <div class="entry-bullet">Languages: English, Hindi, Telugu</div>
+                <div class="entry-bullet">Strong problem-solving abilities with analytical thinking</div>
+                <div class="entry-bullet">Passionate about learning new technologies and applying them to solve real-world problems</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
